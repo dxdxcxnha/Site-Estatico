@@ -485,10 +485,14 @@
                 animation-iteration-count: 1 !important;
                 transition-duration: 0.01ms !important;
             }
+        }        /* ========== TABELAS ========== */
+        .table-responsive {
+            overflow-x: auto; /* Permite rolagem horizontal em telas pequenas */
+            width: 100%;
+            margin: 1.5rem 0;
         }
 
-        /* ========== IMPRESSÃO ========== */
-        @media print {
+        table {dia print {
             header, footer {
                 display: none;
             }
@@ -628,7 +632,8 @@
                 <!-- Tabela de dados detalhados -->
                 <div class="card">
                     <h3>Dados Epidemiológicos Detalhados</h3>
-                    <table>
+                    <div class="table-responsive">
+                        <table>
                         <thead>
                             <tr>
                                 <th>Indicador</th>
@@ -664,6 +669,7 @@
                             </tr>
                         </tbody>
                     </table>
+                    </div>
                 </div>
 
                 <!-- Análise das tendências -->
@@ -770,7 +776,8 @@
                     <p>
                         As recomendações sobre frequência de exames variam de acordo com a idade e fatores de risco:
                     </p>
-                    <table>
+                    <div class="table-responsive">
+                        <table>
                         <thead>
                             <tr>
                                 <th>Grupo de Risco</th>
@@ -801,6 +808,7 @@
                             </tr>
                         </tbody>
                     </table>
+                    </div>
                 </div>
 
                 <!-- Destaque importante -->
@@ -856,7 +864,8 @@
                 <!-- Comparação de estágios -->
                 <div class="card">
                     <h3>Estágios do Câncer de Próstata e Prognóstico</h3>
-                    <table>
+                    <div class="table-responsive">
+                        <table>
                         <thead>
                             <tr>
                                 <th>Estágio</th>
@@ -892,6 +901,7 @@
                             </tr>
                         </tbody>
                     </table>
+                    </div>
                 </div>
 
                 <!-- Histórias de sucesso -->
